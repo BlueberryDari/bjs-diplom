@@ -9,7 +9,7 @@ ApiConnector.login({login, password}, function (response) {
     if (response.success) {
         location.reload();
     } else {
-        userForm.setLoginErrorMessageBox(response.error);
+        userForm.setLoginErrorMessage(response.error);
     }
 });
 };
@@ -20,7 +20,7 @@ ApiConnector.register(data, response => {
 if (response.success) {
     location.reload();
 } else {
-    userForm.setRegisterErrorMessageBox(response.error);
+    userForm.setRegisterErrorMessage(response.error);
 }
 });
 }
